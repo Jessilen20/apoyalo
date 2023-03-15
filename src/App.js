@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Persona from './componentes/ejercicio.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Persona name="Doe, Jane" age={45} hair="Black" />
+      <Persona name="Smith, John" age={88} hair="Brown" /> 
+      <Persona name="Fillmore, Millard" age={50} hair="Brown"/>
+      <Persona name="Smith, Maria" age={62} hair="Brown"/>
     </div>
   );
 }
